@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ראשי תיבות - תחרות בזמן אמת</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auction-container">
+        <h1>תחרות ראשי תיבות בזמן אמת</h1>
+        <p>כאן תוכלו להציע ראשי תיבות ולראות את ההצעות של כולם.</p>
+
+        <ul id="suggestions-list">
+            <!-- כאן יוצגו ההצעות -->
+        </ul>
+
+        <div class="bid-form">
+            <input type="text" id="name" placeholder="שמך" required />
+            <input type="text" id="suggestion" placeholder="הצעת ראשי תיבות" required />
+            <button onclick="placeSuggestion()">שלח הצעה</button>
+        </div>
+
+        <p id="error-message" class="error"></p>
+    </div>
+
+    <!-- חיבור לקובץ ה-JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

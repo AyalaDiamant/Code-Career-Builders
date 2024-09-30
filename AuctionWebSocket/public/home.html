@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auction-container">
+        <h1>Auction</h1>
+        <p id="highest-bidder">Highest Bidder: <span>No bids yet</span></p>
+        <p id="highest-bid">Current Highest Bid: <span>$0</span></p>
+        
+        <div class="bid-form">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="number" id="bid" placeholder="Your bid" required />
+            <button onclick="placeBid()">Place Bid</button>
+        </div>
+
+        <p id="error-message" class="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
